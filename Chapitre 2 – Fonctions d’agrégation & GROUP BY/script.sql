@@ -20,5 +20,6 @@ SELECT MAX(datePub) AS derniere_publication FROM Article;
 SELECT auteur, COUNT(*) AS nb_articles
 FROM Article
 GROUP BY auteur
-HAVING COUNT(*) >= 3;
+HAVING COUNT(*) >= 2;
 SELECT AVG(vues) AS moyenne_vues FROM Article;
+
